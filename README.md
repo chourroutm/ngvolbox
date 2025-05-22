@@ -18,11 +18,11 @@ pip install cloud-volume[zarr] neuroglancer numpy
 Pass either a Neuroglancer URL (`--url`) between single quotes or the path to a JSON file with a Neuroglancer state (`--json`).
 
 ```bash
-python volume_to_box.py --url 'https://neuroglancer-demo.appspot.com/#!...' [--process-only "layer1" "layer2"...] [--ignore-non-visible] [--keep-volume] [--suffix "_bbox"]
+python volume_to_bbox.py --url 'https://neuroglancer-demo.appspot.com/#!...' [--process-only "layer1" "layer2"...] [--ignore-non-visible] [--keep-volume] [--suffix "_bbox"]
 ```
 
 ```bash
-python volume_to_box.py --json '/path/to/state.json' [--process-only "layer1" "layer2"...] [--ignore-non-visible] [--keep-volume] [--suffix "_bbox"]
+python volume_to_bbox.py --json '/path/to/state.json' [--process-only "layer1" "layer2"...] [--ignore-non-visible] [--keep-volume] [--suffix "_bbox"]
 ```
 
 By default, volume layers (i.e. images and segmentations) are replaced by their bounding box (as a new annotation layer).
